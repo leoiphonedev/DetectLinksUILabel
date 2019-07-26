@@ -12,6 +12,7 @@
 		DCA774B722E8A59A00E66AEA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCA774B522E8A59A00E66AEA /* Main.storyboard */; };
 		DCA774B922E8A59B00E66AEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCA774B822E8A59B00E66AEA /* Assets.xcassets */; };
 		DCA774BC22E8A59B00E66AEA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCA774BA22E8A59B00E66AEA /* LaunchScreen.storyboard */; };
+		DCA774C422E8AD0100E66AEA /* UITapGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA774C322E8AD0100E66AEA /* UITapGesture.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		DCA774B822E8A59B00E66AEA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DCA774BB22E8A59B00E66AEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DCA774BD22E8A59B00E66AEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCA774C322E8AD0100E66AEA /* UITapGesture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITapGesture.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 		DCA774B022E8A59A00E66AEA /* TapableLinksUILabel */ = {
 			isa = PBXGroup;
 			children = (
+				DCA774C322E8AD0100E66AEA /* UITapGesture.swift */,
 				DCA774B122E8A59A00E66AEA /* AppDelegate.swift */,
 				DCA774B322E8A59A00E66AEA /* ViewController.swift */,
 				DCA774B522E8A59A00E66AEA /* Main.storyboard */,
@@ -137,6 +140,7 @@
 			files = (
 				DCA774B422E8A59A00E66AEA /* ViewController.swift in Sources */,
 				DCA774B222E8A59A00E66AEA /* AppDelegate.swift in Sources */,
+				DCA774C422E8AD0100E66AEA /* UITapGesture.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,7 +286,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = TapableLinksUILabel/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -290,6 +295,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.iostutorialjunction.TapableLinksUILabel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -299,7 +305,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = TapableLinksUILabel/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -307,6 +314,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.iostutorialjunction.TapableLinksUILabel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
