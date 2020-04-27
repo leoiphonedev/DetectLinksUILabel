@@ -23,7 +23,7 @@ extension UITapGestureRecognizer {
         
         // Configure textContainer
         textContainer.lineFragmentPadding = 0.0
-        textContainer.lineBreakMode = label.lineBreakMode
+        textContainer.lineBreakMode = NSLineBreakMode.byWordWrapping
         textContainer.maximumNumberOfLines = label.numberOfLines
         let labelSize = label.bounds.size
         textContainer.size = labelSize
@@ -35,7 +35,8 @@ extension UITapGestureRecognizer {
                                           y: (labelSize.height - textBoundingBox.size.height) * 0.5 - textBoundingBox.origin.y);
         let locationOfTouchInTextContainer = CGPoint(x: locationOfTouchInLabel.x - textContainerOffset.x,
                                                      y: locationOfTouchInLabel.y - textContainerOffset.y);
-        let indexOfCharacter = layoutManager.characterIndex(for: locationOfTouchInTextContainer, in: textContainer, fractionOfDistanceBetweenInsertionPoints: nil)
+        var indexOfCharacter = layoutManager.characterIndex(for: locationOfTouchInTextContainer, in: textContainer, fractionOfDistanceBetweenInsertionPoints: nil)
+        indexOfCharacter = indexOfCharacter + 4
         
         return NSLocationInRange(indexOfCharacter, targetRange)
     }
